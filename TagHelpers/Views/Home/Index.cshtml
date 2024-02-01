@@ -1,0 +1,30 @@
+﻿@{
+	Layout = null;
+}
+
+<!doctype html>
+<html>
+	<head>
+		<meta name="viweport" content="width=device-width"/>
+		<title>Index</title>
+		<link href="~/css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h2>Educación IT</h2>
+		<nav>
+			<span>
+				Imagenes
+			</span>
+			<span>
+				@*Html.ActionLink("Empleados","Index","Empleado")*@
+				<a asp-action="Index" asp-controller="Empleado" >Empleados</a>
+			</span>
+			<span>
+				Contáctenos
+			</span>
+		</nav>
+		<footer>
+			Página principal de Educación IT
+		</footer>
+	</body>
+</html>

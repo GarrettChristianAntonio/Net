@@ -1,0 +1,25 @@
+﻿@model int
+
+<td>
+    @if (ViewBag.Alumnos != null && Model >= 0 && Model < ViewBag.Alumnos.Count)
+    {
+        <div>
+            Nombre: @ViewBag.Alumnos[Model].Nombre
+        </div>
+        <div>
+            Apellido: @ViewBag.Alumnos[Model].Apellido
+        </div>
+        <div>
+            Domicilio: @ViewBag.Alumnos[Model].Domicilio
+        </div>
+        <div>
+            Telefono: @ViewBag.Alumnos[Model].Telefono
+        </div>
+    }
+    else
+    {
+        <div>
+            Error: Índice fuera de rango.
+        </div>
+    }
+</td>

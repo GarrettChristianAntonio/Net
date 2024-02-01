@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\NetCoreMVC\\NetCore\\TagHelpers\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\NetCoreMVC\\NetCore\\TagHelpers\\wwwroot\\images\\Christian.jpg",
+      "PackagePath": "staticwebassets\\images\\Christian.jpg"
+    },
+    {
+      "Id": "E:\\NetCoreMVC\\NetCore\\TagHelpers\\wwwroot\\images\\Gabriela.jpg",
+      "PackagePath": "staticwebassets\\images\\Gabriela.jpg"
+    },
+    {
+      "Id": "E:\\NetCoreMVC\\NetCore\\TagHelpers\\wwwroot\\images\\Michael.jpg",
+      "PackagePath": "staticwebassets\\images\\Michael.jpg"
+    },
+    {
+      "Id": "E:\\NetCoreMVC\\NetCore\\TagHelpers\\wwwroot\\images\\Roberto.jpg",
+      "PackagePath": "staticwebassets\\images\\Roberto.jpg"
+    },
+    {
+      "Id": "E:\\NetCoreMVC\\NetCore\\TagHelpers\\wwwroot\\images\\Walter.jpg",
+      "PackagePath": "staticwebassets\\images\\Walter.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TagHelpers.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TagHelpers.props",
+      "PackagePath": "build\\TagHelpers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TagHelpers.props",
+      "PackagePath": "buildMultiTargeting\\TagHelpers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TagHelpers.props",
+      "PackagePath": "buildTransitive\\TagHelpers.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

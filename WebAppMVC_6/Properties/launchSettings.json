@@ -1,0 +1,30 @@
+﻿{
+    "$schema": "http://json.schemastore.org/launchsettings.json",
+    "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+            "applicationUrl": "http://localhost:42062",
+            "sslPort": 44329
+        }
+    },
+        "profiles": {
+            "IIS Express": {
+                "commandName": "IISExpress",
+                "launchBrowser": true,
+                "launchUrl": "api/alumno",
+                "environmentVariables": {
+                    "ASPNETCORE_ENVIRONMENT": "Development"
+                }
+            },
+            "NetCore": {
+                "commandName": "Project",
+                "launchBrowser": true,
+                "launchUrl": "api/alumno",
+                "applicationUrl": "http://localhost:5000",
+                "environmentVariables": {
+                    "ASPNETCORE_ENVIRONMENT": "Development"
+                }
+            }
+        }
+}

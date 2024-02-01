@@ -1,0 +1,20 @@
+﻿@model VistasEnlazadas.Models.Restaurant
+@{
+	Layout = null;
+}
+
+
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Otra forma de ver</title>
+</head>
+<body>
+	<h1>Información del restaurant</h1>
+	<div>
+		@Html.EditorForModel()
+	</div>
+	<p id="remak">La 1º forma de pasar un modelo desde una accion a una vista</p>
+</body>
+</html>

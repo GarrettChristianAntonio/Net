@@ -1,0 +1,23 @@
+﻿
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width"/>
+		<tittle>Index</tittle>
+		
+	</head>
+	<body>
+		<h2>Table</h2>
+		<p>
+			Table Site
+			The number of entrances to this page is: @ViewBag.NumberOfViews
+		</p>
+		@await Html.PartialAsync("_NumberLinks")
+
+	</body>
+</html>

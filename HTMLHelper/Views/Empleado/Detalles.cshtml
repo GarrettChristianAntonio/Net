@@ -1,0 +1,21 @@
+﻿@{
+	Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+	<meta name="viweport" content="width=device-width" />
+	<title>Detalles</title>
+	<link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+	<h2>Ficha del Empleado</h2>
+	<p>
+		Nombre : @ViewBag.EmpleadoSelecionado
+	</p>
+
+	<img src="@Url.Action("GetImagen", new {empleadoNombre = ViewBag.EmpleadoSeleccionado})" width="400"/>
+	<p>@Html.ActionLink("Volver a la lista de empleados","Index")</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿@model Formularios.Models.Usuario
+@{
+	Layout = null;
+}
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width"/>
+		<tittle>Index</tittle>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Crea una cuenta de usuario</h1>
+			<form asp-action="Detalles" method="post">
+				<lable asp-for="Nombre">Nombre</lable>
+				<input asp-for="Nombre"/>
+				<span asp-validation-for="Nombre" ></span>
+				<br />
+				<lable asp-for="Email">Email</lable>
+				<input asp-for="Email" />
+				<br />
+				<lable asp-for="Nacimiento">Nacimiento</lable>
+				<input asp-for="Nacimiento" />
+				<br />
+				<lable asp-for="Password">Password</lable>
+				<input asp-for="Password" />				
+				<br />
+				<lable asp-for="Vive">Vive?</lable>
+				<input asp-for="Vive" />
+				<span asp-validation-for="Vive" ></span>
+			<br />
+				<input type="submit" value="Register"/>
+			</form>
+		</div>
+	</body>
+</html>

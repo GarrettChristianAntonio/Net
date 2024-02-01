@@ -1,0 +1,36 @@
+﻿@model ErrorHandling.Models.DivisionResult
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<tittle>GetDividedNumber</tittle>
+
+</head>
+<body>
+	<h2>Number @Model.DivideNumber</h2>
+	<p>
+		The number @Model.DivideNumber id divided by the following numbers: </br>
+		@foreach (var item in Model.DividingNumbers)
+		{
+			<span>@Html.DisplayFor(i => item)</span>
+		}
+		This number was viewed @ViewBag.NumberOfViews
+		@if (ViewBag.NumberOfViews > 1)
+		{
+			@:times
+		}
+		else
+		{
+			@:time
+		}
+	</p>
+	<div>
+		@await Html.PartialAsync("_NumberLinks")
+	</div>
+
+</body>
+</html>

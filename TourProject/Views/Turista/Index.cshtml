@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+	<link href="e:\netcoremvc\netcore\tourproject\wwwroot\css\city-styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h3 class="main-titel">hola @ViewBag.TuristaNombre</h3>
+    <h4 class="into">Explorar imagenes del tour</h4>
+    <div class="img-container">
+        <div class="photo-index-card">
+			<img class="photo-img" src="~/images/blackberries.jpg" alt="Texto alternativo" width="300"/>
+        </div>
+         <div class="photo-index-card">
+			<img class="photo-img" src="~/images/Flowers.jpg" alt="Texto alternativo" width="300"/>
+        </div>
+        <div class="photo-index-card">
+            <img class="photo-img" src="~/images/Orchard.jpg" alt="Texto alternativo" width="300" />
+        </div>
+        <div class="photo-index-card">
+            <img class="photo-img" src="~/images/Ripples.jpg" alt="Texto alternativo" width="300" />
+        </div>
+        <div class="button-center">
+            @Html.ActionLink("Siguiente", "Index", "Ciudad");
+        </div>
+    </div>
+</body>
+</html>

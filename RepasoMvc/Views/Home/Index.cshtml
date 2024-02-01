@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Index";
+
+}
+
+<h1>Index</h1>
+
+<button type="button" id="btnLoadInformation">Cargar Información</button>
+<button type="button" id="btnLoadOtroDiv">Cargar Información</button>
+<button type="button" id="btnAyuda">Ayuda</button>
+<button type="button" id="btnLimpiar">Cargar Información</button>
+
+<div id="informationContainer"></div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $("#btnLoadInformation").click(function () {
+                $.ajax({
+                    url: '@Url.Action("_Information", "Home")',
+                    type: 'GET',
+                    success: function (result) {
+                        $("#informationContainer").html(result);
+                    },
+                    error: function (error) {
+                        console.error('Error al cargar la información:', error);
+                    }
+                });
+            });
+            $("#btnLoadOtroDiv").click(function () {
+                $.ajax({
+                    url: '@Url.Action("_OtroDiv", "Home")',
+                    type: 'GET',
+                    success: function (result) {
+                        $("#informationContainer").html(result);
+                    },
+                    error: function (error) {
+                        console.error('Error al cargar la información:', error);
+                    }
+                });
+            });
+            $("#btnAyuda").click(function () {
+                $.ajax({
+                    url: '@Url.Action("_Ayuda", "Home")',
+                    type: 'GET',
+                    success: function (result) {
+                        $("#informationContainer").html(result);
+                    },
+                    error: function (error) {
+                        console.error('Error al cargar la información:', error);
+                    }
+                });
+            });
+            $("#btnLimpiar").click(function () {
+                $.ajax({                   
+                    
+                    success: function (result) {
+                        $("#informationContainer").html("");
+                    },
+                    error: function (error) {
+                        console.error('Error al cargar la información:', error);
+                    }
+                });
+            });
+
+        });
+    </script>
+}

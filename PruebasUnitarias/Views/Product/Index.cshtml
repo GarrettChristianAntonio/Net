@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PruebasUnitarias.Models.Product>
+
+@{
+	Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device.width" />
+	<title>Index</title>
+	<link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>Lista de productos:</h1>
+	<div>
+		@foreach (var p in Model)
+		{
+			<div>
+				<a asp-action="GetProduct" asp-route-id="@p.Id">@p.Name </a>
+			</div>
+		}
+	</div>
+	
+</body>
+</html>

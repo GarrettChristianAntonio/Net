@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    
+</head>
+<body>
+   
+    @foreach (string empleado in ViewBag.EmpleadosNombres)
+    {
+        <a asp-action="Detalles" asp-controller="Empleado">@empleado</a>
+    }
+</body>
+</html>

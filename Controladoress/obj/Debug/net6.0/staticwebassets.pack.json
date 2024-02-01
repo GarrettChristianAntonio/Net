@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\NetCoreMVC\\NetCore\\Controladoress\\wwwroot\\css\\estilos_controladores.css",
+      "PackagePath": "staticwebassets\\css\\estilos_controladores.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Controladoress.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Controladoress.props",
+      "PackagePath": "build\\Controladoress.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Controladoress.props",
+      "PackagePath": "buildMultiTargeting\\Controladoress.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Controladoress.props",
+      "PackagePath": "buildTransitive\\Controladoress.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

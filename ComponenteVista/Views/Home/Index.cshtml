@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <h2>Tarjeta Alumnos</h2>
+    <table>
+        @for (int rowIndex = 0; rowIndex < ViewBag.Filas; rowIndex++)
+        {
+            <tr>
+               
+                @for(int columnIndex = 0; columnIndex < ViewBag.Columnas; columnIndex++)
+                {
+                    
+                    int tarjetaIndex = columnIndex + (rowIndex * ViewBag.Columnas);
+                    @await Component.InvokeAsync("PersonaTarjetaComponenteVista",tarjetaIndex);
+                }
+            </tr>
+        }
+    </table>
+</body>
+</html>

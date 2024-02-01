@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Sql_Lite.Models.Person>
+
+@{
+	Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device.width" />
+	<title>Index</title>
+	<link href="~/css/Butterflies.css" rel="stylesheet" />
+</head>
+<body>
+	<h2>People information</h2>
+	<a asp-action="Create">Create new Person</a>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.FirstName);
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.LastName);
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.City);
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.Address);						
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var item in Model)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(model => item.FirstName)
+						</td>
+						<td>
+							@Html.DisplayFor(model => item.LastName)
+						</td>
+						<td>
+							@Html.DisplayFor(model => item.City)
+						</td>
+						<td>
+							@Html.DisplayFor(model => item.Address)
+						</td>
+						<td>
+							<a asp-action="Edit" asp-route-id="@item.PersonId"></a>
+						</td>
+						<td>
+							<a asp-action="Delete" asp-route-id="@item.PersonId"></a>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

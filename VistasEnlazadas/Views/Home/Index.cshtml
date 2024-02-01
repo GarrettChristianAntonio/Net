@@ -1,0 +1,34 @@
+﻿@model VistasEnlazadas.Models.Restaurant
+@{
+	Layout = null;
+}
+
+
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width"/>
+		<title>Index</title>
+	</head>
+	<body>
+		<h1>Información del restaurant</h1>
+		<div>
+			<p>
+				<b>Nombre:</b>@Model.Nombre
+			</p>
+			<p>
+				<b>Direccion:</b>@Model.Direccion
+			</p>
+			<p>
+				<b>Especialidad:</b>@Model.Especialidad
+			</p>
+			<p>
+				<b>Abierto:</b>@Model.Abierto
+			</p>			
+			<p>
+				<b>Ranking:</b>@Model.Review
+			</p>
+		</div>
+	<p id="remak">La 1º forma de pasar un modelo desde una accion a una vista</p>
+	</body>
+</html>

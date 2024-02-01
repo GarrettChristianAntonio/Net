@@ -1,0 +1,26 @@
+﻿@model PruebasUnitarias.Models.Product
+
+@{
+	Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device.width" />
+	<title>Index</title>
+	<link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>Lista de productos:</h1>
+
+	<p> @Html.DisplayFor(modelItem => Model.Name) </p>
+	<p> @Html.DisplayFor(modelItem => Model.FormattedPrice) </p>
+	<p> @Html.DisplayFor(modelItem => Model.Description) </p>
+	<div>
+		<a asp-action="Index"> back</a>
+	</div>
+	<div>
+		<img class="product-img" src="@Url.Action("GetImage", new {name = Model.ImageName})" />
+	</div>
+</body>
+</html>

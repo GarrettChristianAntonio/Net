@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "Pi7vJIulureefsmmLEtDoMFkCH6cAQ9Ycqt+SG+kMx4=",
+  "Source": "Encuestaa",
+  "BasePath": "_content/Encuestaa",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Encuestaa\\wwwroot",
+      "Source": "Encuestaa",
+      "ContentRoot": "E:\\NetCoreMVC\\NetCore\\Encuestaa\\wwwroot\\",
+      "BasePath": "_content/Encuestaa",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\NetCoreMVC\\NetCore\\Encuestaa\\wwwroot\\css\\Style.css",
+      "SourceId": "Encuestaa",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\NetCoreMVC\\NetCore\\Encuestaa\\wwwroot\\",
+      "BasePath": "_content/Encuestaa",
+      "RelativePath": "css/Style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Style.css"
+    },
+    {
+      "Identity": "E:\\NetCoreMVC\\NetCore\\Encuestaa\\wwwroot\\poll-questions.html",
+      "SourceId": "Encuestaa",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\NetCoreMVC\\NetCore\\Encuestaa\\wwwroot\\",
+      "BasePath": "_content/Encuestaa",
+      "RelativePath": "poll-questions.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\poll-questions.html"
+    }
+  ]
+}

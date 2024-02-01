@@ -1,0 +1,22 @@
+﻿@{
+	Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+	<meta name="viweport" content="width=device-width" />
+	<title>Index</title>
+	<link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+	<h2>Empleados</h2>
+	<p>Seleccionar un empleado de la lista:</p>
+	@foreach(string nombre in ViewBag.EmpleadosNombres)
+	{
+		<div>
+			@Html.ActionLink(nombre, "Detalles",new {empleadoNombre = nombre})
+		</div>
+	}
+</body>
+</html>

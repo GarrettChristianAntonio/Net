@@ -1,0 +1,35 @@
+﻿@model TourProject.Models.Ciudad;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Page"]</title>
+	<link href="~/css/city-styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1 class="sitetitle">@ViewBag.Titulo</h1>
+        <div style="padding:20px;"> 
+            @if(Model.Nombre != null)
+            {
+                <div>
+                    <img class="photo-display-img" src="@Url.Action("GetImagen", "Ciudad", new{CiudadId = Model.Id})" />
+                </div>                
+            }
+        </div>
+        <br />
+        <div>
+            <div cite="button-center">
+                @Html.ActionLink("Regresar","Index");
+            </div>
+        </div>
+    </div>
+    
+ 
+</body>
+</html>

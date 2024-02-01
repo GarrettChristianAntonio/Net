@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalles</title>
+
+</head>
+<body>
+    <p>@ViewBag.EmpleadoSeleccionado</p>
+   
+    <img src="~/Empleado/GetImagen" asp-controller="Empleado" asp-action="GetImagen" asp-route-empleadoNombre="@ViewBag.EmpleadoSeleccionado" width="400" />
+    <img src="@Url.Action("GetImagen", new {empleadoNombre = ViewBag.EmpleadoSeleccionado})" width="400" />
+    <a asp-action="Index" asp-controller="Empleado">Volver</a>
+</body>
+</html>

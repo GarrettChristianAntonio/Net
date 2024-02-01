@@ -1,0 +1,48 @@
+﻿@model Formularios.Models.Usuario
+@{
+	Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<tittle>Detalles</tittle>
+</head>
+<body>
+	<div class="container">
+		<h1>Información de usuario</h1>
+		<div>
+			<span>
+				@Html.DisplayNameFor(model => model.Nombre)
+			</span>
+			<br />
+			<span>
+				@Html.DisplayFor(model => model.Nombre)
+			</span>
+			<span>
+				@Html.DisplayNameFor(model => model.Email)
+			</span>
+			<br />
+			<span>
+				@Html.DisplayFor(model => model.Email)
+			</span>
+			<span>
+				@Html.DisplayNameFor(model => model.Nacimiento)
+			</span>
+			<br />
+			<span>
+				@Html.DisplayFor(model => model.Nacimiento)
+			</span>
+			<span>
+				@Html.DisplayNameFor(model => model.Vive)
+			</span>
+			<br />
+			<span>
+				@Html.DisplayFor(model => model.Vive)
+			</span>
+
+			
+		</div>
+	</div>
+</body>
+</html>

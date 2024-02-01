@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "WQjT+inkpgCwvn5RwyfHkTW+g/Md1CohZKPuR+r+LGE=",
+  "Source": "Controladoress",
+  "BasePath": "_content/Controladoress",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Controladoress\\wwwroot",
+      "Source": "Controladoress",
+      "ContentRoot": "E:\\NetCoreMVC\\NetCore\\Controladoress\\wwwroot\\",
+      "BasePath": "_content/Controladoress",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\NetCoreMVC\\NetCore\\Controladoress\\wwwroot\\css\\estilos_controladores.css",
+      "SourceId": "Controladoress",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\NetCoreMVC\\NetCore\\Controladoress\\wwwroot\\",
+      "BasePath": "_content/Controladoress",
+      "RelativePath": "css/estilos_controladores.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\estilos_controladores.css"
+    }
+  ]
+}
